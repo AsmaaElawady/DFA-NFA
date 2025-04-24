@@ -8,6 +8,7 @@ public class ProblemSolver {
     
             new P1(br, bw);
             new P2(br, bw);
+            new P5(br, bw);
     
             br.close();
             bw.close();

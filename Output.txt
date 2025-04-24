@@ -10,3 +10,9 @@ False
 True
 False
 x
+3
+True
+True
+True
+False
+x
