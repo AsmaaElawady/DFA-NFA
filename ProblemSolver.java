@@ -7,6 +7,7 @@ public class ProblemSolver {
             BufferedWriter bw = new BufferedWriter(new FileWriter("output.txt"));
     
             new P1(br, bw);
+            new P2(br, bw);
     
             br.close();
             bw.close();
