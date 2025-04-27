@@ -1,17 +1,7 @@
 True
 True
-False
-False
-x
-False
-False
 True
 False
-x
-False
-False
-True
-True
 x
 True
 True
