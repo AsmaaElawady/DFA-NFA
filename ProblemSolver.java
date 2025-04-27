@@ -61,7 +61,7 @@ public class ProblemSolver {
                 P2 p2 = new P2(tests, bw);
                 break;
             case 3:
-                P3 p3 = new P3(tests, bw);
+                //P3 p3 = new P3(tests, bw);
                 break;
             case 4:
                 //P4 p4 = new P4(tests, bw);
