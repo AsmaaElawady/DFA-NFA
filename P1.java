@@ -13,8 +13,8 @@ public class P1 {
 
     DFA dfa = new DFA(states, startState, finalStates, alphabet, transitionTable);
 
-    public P1(BufferedReader br, BufferedWriter bw) {
-        dfa.solveProblem(br, bw);
+    public P1(List<String> testCases, BufferedWriter bw) {
+        dfa.solveProblem(testCases, bw);
         System.out.println("Problem 1 done");
     }
 }

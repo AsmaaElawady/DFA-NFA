@@ -34,22 +34,20 @@ public class DFA {
         return finalStates.contains(currentState);
     }
 
-    public void solveProblem(BufferedReader br, BufferedWriter bw) {
+    public void solveProblem(List<String> testCases, BufferedWriter bw) {
         try {
-            String line = br.readLine(); // Problem number
-            bw.write(line); bw.newLine();
-
-            while ((line = br.readLine()) != null && !line.equals("end")) {
-                boolean result = isAccepted(line);
+            for (String testCase : testCases) {
+                boolean result = isAccepted(testCase);
                 bw.write(result ? "True" : "False");
                 bw.newLine();
             }
-
-            bw.write("x"); bw.newLine();
+            bw.write("x");
+            bw.newLine();
             bw.flush();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+    
 }
 

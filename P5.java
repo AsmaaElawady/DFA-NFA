@@ -1,5 +1,6 @@
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.util.List;
 import java.util.Map;
 
 public class P5 {
@@ -16,8 +17,8 @@ public class P5 {
 );
     DFA dfa = new DFA(states, startState, finalStates, alphabet, transitionTable);
 
-    public P5(BufferedReader br, BufferedWriter bw) {
-        dfa.solveProblem(br, bw);
+    public P5( List<String> testcases, BufferedWriter bw) {
+        dfa.solveProblem(testcases, bw);
         System.out.println("Problem 5 done");
     }
 }
