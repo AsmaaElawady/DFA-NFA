@@ -20,5 +20,6 @@ NFA nfa = new NFA(states,startState,finalState,alphabet,transitionTable);
 public P8 (List<String>testCase, BufferedWriter bw)
 {
 nfa.solveProblem(testCase,bw);
+System.out.println("Problem 8 done");
 }
 }
