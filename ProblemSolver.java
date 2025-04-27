@@ -73,7 +73,7 @@ public class ProblemSolver {
                 P6 p6 = new P6(tests, bw);
                 break;
             case 7: 
-                //P7 p7 = new P7(tests, bw);
+                P7 p7 = new P7(tests, bw);
                 break;
             case 8: 
                 P8 p8 = new P8(tests, bw);
