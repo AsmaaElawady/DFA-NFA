@@ -61,13 +61,22 @@ public class ProblemSolver {
                 P2 p2 = new P2(tests, bw);
                 break;
             case 3:
-                //P3 p3 = new P3(tests, bw);
+                P3 p3 = new P3(tests, bw);
                 break;
             case 4:
                 //P4 p4 = new P4(tests, bw);
                 break;  
             case 5: 
                 P5 p5 = new P5(tests, bw);
+                break;
+            case 6: 
+                //P6 p6 = new P6(tests, bw);
+                break;
+            case 7: 
+                //P7 p7 = new P7(tests, bw);
+                break;
+            case 8: 
+                P8 p8 = new P8(tests, bw);
                 break;
             default:
                 System.out.println("Invalid problem number: " + problemNumber);
