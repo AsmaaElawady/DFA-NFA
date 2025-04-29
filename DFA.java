@@ -34,8 +34,10 @@ public class DFA {
         return finalStates.contains(currentState);
     }
 
-    public void solveProblem(List<String> testCases, BufferedWriter bw) {
+    public void solveProblem(int problemNum, List<String> testCases, BufferedWriter bw) {
         try {
+            bw.write(Integer.toString(problemNum));
+            bw.newLine();
             for (String testCase : testCases) {
                 boolean result = isAccepted(testCase);
                 bw.write(result ? "True" : "False");

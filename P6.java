@@ -23,8 +23,8 @@ public class P6
     // public P6(BufferedReader br, BufferedWriter bw) {
     //     nfa.solveProblem(br, bw);
     // }
-    public P6(List<String> testCases, BufferedWriter bw) {
-        nfa.solveProblem(testCases, bw);
+    public P6(int pNum, List<String> testCases, BufferedWriter bw) {
+        nfa.solveProblem(pNum,testCases, bw);
         System.out.println("Problem 6 done");
 
     }

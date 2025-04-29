@@ -16,8 +16,8 @@ public class P2 {
 
     DFA dfa = new DFA(states, startState, finalStates, alphabet, transitionTable);
 
-    public P2(List<String> testcases, BufferedWriter bw) {
-        dfa.solveProblem(testcases, bw);
+    public P2(int pNum,List<String> testcases, BufferedWriter bw) {
+        dfa.solveProblem(pNum,testcases, bw);
         System.out.println("Problem 2 done");
     }
 }

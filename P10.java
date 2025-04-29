@@ -1,4 +1,3 @@
-import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.util.*;
 
@@ -20,8 +19,8 @@ public class P10 {
     //     nfa.solveProblem(br, bw);
     // }
 
-    public P10(List<String> testCases, BufferedWriter bw) {
-        nfa.solveProblem(testCases, bw);
+    public P10(int pNum, List<String> testCases, BufferedWriter bw) {
+        nfa.solveProblem( pNum,testCases, bw);
         System.out.println("Problem 10 done");
 
     }

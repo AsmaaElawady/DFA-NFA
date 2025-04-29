@@ -17,9 +17,9 @@ Map<Integer, int[][]> transitionTable = Map.ofEntries(
 );
 
 NFA nfa = new NFA(states,startState,finalState,alphabet,transitionTable);
-public P8 (List<String>testCase, BufferedWriter bw)
+public P8 (int pNum, List<String>testCase, BufferedWriter bw)
 {
-nfa.solveProblem(testCase,bw);
+nfa.solveProblem( pNum,testCase,bw);
 System.out.println("Problem 8 done");
 }
 }

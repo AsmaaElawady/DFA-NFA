@@ -25,8 +25,8 @@ public class P7 {
 
     NFA nfa = new NFA(states, startState, finalState, alphabet, transitionTable);
 
-    public P7(List<String> testCases, BufferedWriter bw) {
-        nfa.solveProblem(testCases, bw);
+    public P7(int pNum, List<String> testCases, BufferedWriter bw) {
+        nfa.solveProblem( pNum,testCases, bw);
         System.out.println("Problem 7 done");
     }
 }

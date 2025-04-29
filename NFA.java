@@ -113,8 +113,10 @@ public class NFA {
         return -1; // Return -1 if the character is not in the alphabet
     }
 
-    public void solveProblem(List<String> testCases, BufferedWriter bw) {
+    public void solveProblem(int pNum,List<String> testCases, BufferedWriter bw) {
         try {
+            bw.write(Integer.toString(pNum));
+            bw.newLine();
             for (String testCase : testCases) {
                 boolean result = isAccepted(testCase);
                 bw.write(result ? "True" : "False");
