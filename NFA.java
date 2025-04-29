@@ -1,3 +1,4 @@
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.util.*;
 import java.io.IOException;
@@ -113,17 +114,18 @@ public class NFA {
         return -1; // Return -1 if the character is not in the alphabet
     }
 
-    public void solveProblem(int pNum,List<String> testCases, BufferedWriter bw) {
+    public void solveProblem(BufferedReader br, BufferedWriter bw) {
         try {
-            bw.write(Integer.toString(pNum));
-            bw.newLine();
-            for (String testCase : testCases) {
-                boolean result = isAccepted(testCase);
+            String line = br.readLine(); // Problem number
+            bw.write(line); bw.newLine();
+
+            while ((line = br.readLine()) != null && !line.equals("end")) {
+                boolean result = isAccepted(line);
                 bw.write(result ? "True" : "False");
                 bw.newLine();
             }
-            bw.write("x");
-            bw.newLine();
+
+            bw.write("x"); bw.newLine();
             bw.flush();
         } catch (IOException e) {
             e.printStackTrace();

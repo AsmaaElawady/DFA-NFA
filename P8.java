@@ -1,3 +1,4 @@
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.util.*;
 
@@ -17,9 +18,8 @@ Map<Integer, int[][]> transitionTable = Map.ofEntries(
 );
 
 NFA nfa = new NFA(states,startState,finalState,alphabet,transitionTable);
-public P8 (int pNum, List<String>testCase, BufferedWriter bw)
-{
-nfa.solveProblem( pNum,testCase,bw);
-System.out.println("Problem 8 done");
+public P8(BufferedReader br, BufferedWriter bw) {
+        nfa.solveProblem(br, bw);
+    System.out.println("Problem 8 done");
 }
 }

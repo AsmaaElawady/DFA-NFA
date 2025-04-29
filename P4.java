@@ -21,8 +21,8 @@ public class P4 {
 
     DFA p4Dfa = new DFA(states, startState, finalStates, alphabet, transitionTable);
 
-    public P4(int pNum, List<String> testCases, BufferedWriter bw) {
-        p4Dfa.solveProblem(pNum, testCases, bw);
+    public P4(BufferedReader br, BufferedWriter bw) {
+        p4Dfa.solveProblem(br, bw);
         System.out.println("Problem 4 done");
     }
     

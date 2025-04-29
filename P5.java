@@ -17,8 +17,8 @@ public class P5 {
 );
     DFA dfa = new DFA(states, startState, finalStates, alphabet, transitionTable);
 
-    public P5( int pNum, List<String> testcases, BufferedWriter bw) {
-        dfa.solveProblem(pNum,testcases, bw);
+    public P5(BufferedReader br, BufferedWriter bw) {
+        dfa.solveProblem(br, bw);
         System.out.println("Problem 5 done");
     }
 }

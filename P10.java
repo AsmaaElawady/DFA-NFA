@@ -19,8 +19,8 @@ public class P10 {
     //     nfa.solveProblem(br, bw);
     // }
 
-    public P10(int pNum,List<String> testCases, BufferedWriter bw) {
-        nfa.solveProblem(pNum,testCases, bw);
+    public P10(BufferedReader br, BufferedWriter bw) {
+        nfa.solveProblem(br, bw);
         System.out.println("Problem 10 done");
 
     }

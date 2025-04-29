@@ -14,9 +14,8 @@ public class P9 {
         Map.entry(3, new int[][]{{1}, {-1}, {-1}})    // 3: E->-1, 0->-1, 1->4
     );
     NFA p9nfa = new NFA(states,startState,finalState,alphabet,transitionTable);
-    public P9 (int pNum, List<String>testCase, BufferedWriter bw)
-    {
-        p9nfa.solveProblem( pNum,testCase,bw);
+    public P9(BufferedReader br, BufferedWriter bw) {
+        p9nfa.solveProblem(br, bw);
         System.out.println("Problem 9 done");
     }
 }

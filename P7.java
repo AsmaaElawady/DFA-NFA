@@ -1,3 +1,4 @@
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.util.List;
 import java.util.Map;
@@ -23,8 +24,8 @@ public class P7 {
 
     NFA nfa = new NFA(states, startState, finalState, alphabet, transitionTable);
 
-    public P7(int pNum, List<String> testCases, BufferedWriter bw) {
-        nfa.solveProblem( pNum,testCases, bw);
+   public P7(BufferedReader br, BufferedWriter bw) {
+        nfa.solveProblem(br, bw);
         System.out.println("Problem 7 done");
     }
 }
