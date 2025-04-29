@@ -1,5 +1,3 @@
-# DFA-NFA
-
 # DFA & NFA Automata Simulator
 
 This project simulates 10 problems using Deterministic and Nondeterministic Finite Automata (DFA & NFA) in Java. It processes structured input from a file, determines acceptance based on automaton rules, and writes the output to a file following a specified format.
